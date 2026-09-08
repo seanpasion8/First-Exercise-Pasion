@@ -1,0 +1,41 @@
+
+Console.WriteLine("Enter Your Name:");
+string Name = Console.ReadLine();
+Console.WriteLine("Enter Your Age");
+int Age = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter Address:");
+string Address = Console.ReadLine();
+Console.WriteLine("Enter Gender:");
+string Gender = Console.ReadLine();
+Console.WriteLine("Enter Nationality:");
+string Nationality = Console.ReadLine();
+
+Console.WriteLine("Name: " + Name);
+Console.WriteLine("Age: " + Age);
+Console.WriteLine("Address: " + Address);
+Console.WriteLine("Gender: " + Gender);
+Console.WriteLine("Nationality: " + Nationality);
+
+//6. Loan Calculator
+Console.WriteLine("Enter Loan Amount:");
+double LoanAmount = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Enter Interest Rate (in %):");
+double InterestRate = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Enter Number of Years:");
+int NumberOfYears = Convert.ToInt32(Console.ReadLine());
+
+//Calculate
+double Interest = LoanAmount * InterestRate * NumberOfYears / 100;
+Console.WriteLine("Interest: " + Interest);
+Console.WriteLine("Total Payment:" + (LoanAmount + Interest));
+Console.WriteLine("Monthly Payment:" + (LoanAmount + Interest) / (NumberOfYears * 12));
+int MonthlyPayment = Convert.ToInt32((LoanAmount + Interest) / (NumberOfYears * 12));
+
+bool isMoreThan = LoanAmount >= 100000 ? true : false;
+Console.WriteLine("Is Loan Amount more than or equal to 100000?: " + isMoreThan);
+bool isLessThan = InterestRate > 20000 ? true : false;
+Console.WriteLine("Is Interest Rate more than 20000?: " + isLessThan);
+bool isMoreThan2 = MonthlyPayment >= 5000 ? true : false;
+Console.WriteLine("Is Monthly Payment more than or equal to 5000?: " + isMoreThan2);
+
+
