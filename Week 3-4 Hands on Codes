@@ -1,0 +1,179 @@
+Treasure Hunt code
+namespace WhileFormApp
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            int treasure = 1;
+
+            lstScore.Items.Clear();
+
+            while (treasure <= 10)
+            {
+                lstScore.Items.Add("Treasure " + treasure +  " collected!");
+                treasure++;
+            }
+        }
+    }
+}
+
+Guess the secret number codes
+namespace GuessTheNumber
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            int secret = 7;
+            int guess = Convert.ToInt32(txtGuess.Text); 
+
+            while (guess != secret)
+            {
+                lblMessage.Text = "Wrong guess! Try again.";
+                return; 
+            }  
+            
+                lblMessage.Text = "You Win!";
+        }
+    }
+}
+
+Coin collector code
+namespace CoinCollector
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCollect_Click(object sender, EventArgs e)
+        {
+            int coins = 0;
+
+            do
+            {
+                coins += 10;
+            }
+            while (coins < 100);
+
+            lblCoins.Text = " Coins: " + coins;  
+        }
+    }
+}
+
+Monster Battle
+namespace MonsteBattle
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnFight_Click(object sender, EventArgs e)
+        {
+            int hp = 50;
+            string result = "";
+
+            do
+            {
+                hp -= 10;
+                result += "Monster HP: " + hp + "\n";    
+            }
+            while (hp > 0); 
+
+            result += "\nMonster defeated!";    
+
+            lblResult.Text = result;    
+        }
+    }
+}
+
+Choose a weapon
+namespace ChooseWeapon
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnFight_Click(object sender, EventArgs e)
+        {
+            string weapon = cmbWeapon.Text;
+
+            switch (weapon)
+            {
+                case "Sword":
+                    lblResult.Text = " You attacked with a Sword!";
+                    break;
+
+                case "Bow":
+                    lblResult.Text = " You attacked with a Bow!";
+                    break;
+
+                case "Magic":
+                    lblResult.Text = " You cast a Magic Spell!";
+                    break;
+
+                default:
+                    lblResult.Text = "Select a weapon first!";
+                    break;
+
+            }
+
+        }
+        }
+}
+
+Choose a door
+namespace ChooseDoor
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            int door = Convert.ToInt32(txtDoor.Text);
+
+            switch (door)
+            {
+                case 1:
+                    lblResult.Text = "💰 You found treasure!";
+                    break;
+
+                case 2:
+                    lblResult.Text = "👾 A monster appeared!";
+                    break;
+
+                case 3:
+                    lblResult.Text = "🧪 You found a magic potion!";
+                    break;
+
+                default:
+                    lblResult.Text = "Choose Door 1, 2, or 3.";
+                    break;
+
+            }
+        }
+    }
+}
