@@ -1,0 +1,43 @@
+Data Structures and Algorithms
+Data structures control the access and storage of data. The processing of this data is the main goal of algorithms. These are two crucial components of any programming language. Each programming language has a unique set of data structures and various algorithms for handling them.
+
+Linear Data Structures
+ A type of data structure known as a linear data structure is one in which the data elements are arranged either sequentially or linearly. With the exception of the first and last elements, every element has a previous and next adjacent. 
+A linear data structure that keeps elements of the same data type in consecutive memory locations is called a one-dimensional array. With each element identified by its index or position within the array, it offers a methodical approach to organizing and accessing a collection of elements. The index ranges from 0 to the array's size minus one.
+For a wide range of data storage and manipulation applications, one-dimensional arrays are practical and reliable data formats. They are essential to many C programs and are employed in a wide range of applications.
+
+
+The Big O Notation
+Algorithms' time or space complexity is expressed using Big O notation. An upper bound on the time or space complexity of an algorithm can be expressed using Big-O. The effectiveness of various algorithms or data structures can be compared using it.
+
+
+Search algorithms
+In computer science, searching algorithms are crucial tools for finding particular items in a set of data. We will primarily concentrate on searching in an array in this tutorial. Depending on the type of input array, there are two most popular algorithms for searching an item in an array.
+Linear search is applied to an array that is not sorted. It mainly does one by one comparison of the item to be searched with array elements. It requires O(n) or linear time.
+Binary search is for a sorted array, it is employed. It primarily compares the middle element of the array first, returning if the middle element matches the input. Otherwise, depending on the comparison result (i.e., whether the mid element is smaller or greater), it searches in either the left or right half. This algorithm takes O(Log n) time and is quicker than linear search.
+
+
+
+
+  
+
+
+
+
+
+
+
+
+References:
+Data Structures and Algorithms (DSA) Tutorial. (n.d.). https://www.tutorialspoint.com/data_structures_algorithms/index.htm
+
+DSA Tutorial. (n.d.). geeksforgeeks.org. https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/
+
+Introduction to Linear Data Structures. (n.d.). https://www.geeksforgeeks.org/dsa/introduction-to-linear-data-structures/
+
+Ghosh, A. K. (2025, September 23). One dimensional Array in Data Structures with Example. ScholarHat. https://www.scholarhat.com/tutorial/datastructures/one-dimensional-array
+
+Big O Analysis. (n.d.). https://www.geeksforgeeks.org/dsa/analysis-algorithms-big-o-analysis/
+
+GeeksforGeeks. (2026, March 3). Searching algorithms. GeeksforGeeks. https://www.geeksforgeeks.org/dsa/searching-algorithms/
+
